@@ -1,0 +1,2 @@
+class Config:
+    VALOR_MAX_TRANSFERENCIA_POUPANCA: int = 1000

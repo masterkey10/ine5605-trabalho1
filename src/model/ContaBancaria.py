@@ -1,7 +1,5 @@
 from abc import ABC, abstractmethod
 
-from model.Transferencia import Transferencia
-
 class ContaBancaria(ABC):
     _id = 0
 
@@ -23,13 +21,13 @@ class ContaBancaria(ABC):
         return self._numero_conta
 
     @abstractmethod
-    def transferir(self, transferencia: Transferencia) -> Transferencia | None:
+    def transferir(self, transferencia):
         pass
 
     def depositar(self, valor: float) -> None:
         self._saldo += valor
 
-    def receber(self, transferencia: Transferencia) -> None:
+    def receber(self, transferencia) -> None:
         self._saldo += transferencia.valor
 
     @classmethod
