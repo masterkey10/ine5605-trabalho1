@@ -1,6 +1,8 @@
 from abc import ABC, abstractmethod
 
-class ContaBancaria(ABC):
+from model.Abstract import Abstract
+
+class ContaBancaria(ABC, Abstract):
     _id = 0
 
     def __init__(self, cpf_titular: str):
@@ -34,9 +36,4 @@ class ContaBancaria(ABC):
     def _getNumeroConta(cls) -> int:
         cls._id += 1
         return cls._id
-
-    def __new__(cls, *args, **kwargs):
-        if cls is ContaBancaria:
-            raise TypeError(f"Classe 'ContaBancaria' não deve ser instanciada diretamente!")
-        return object.__new__(cls, *args, **kwargs)
 
