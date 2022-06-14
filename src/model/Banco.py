@@ -1,5 +1,5 @@
-from src.model.Cliente import Cliente
-from src.model.ContaBancaria import ContaBancaria
+from model.Cliente import Cliente
+from model.ContaBancaria import ContaBancaria
 
 
 class Banco:

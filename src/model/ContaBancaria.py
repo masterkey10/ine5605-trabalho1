@@ -38,5 +38,5 @@ class ContaBancaria(ABC):
     def __new__(cls, *args, **kwargs):
         if cls is ContaBancaria:
             raise TypeError(f"Classe 'ContaBancaria' não deve ser instanciada diretamente!")
-        return object.__new__(cls, *args, **kwargs)
+        return object.__new__(cls)
 
