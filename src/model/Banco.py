@@ -29,3 +29,11 @@ class Banco(Singleton):
 
     def _check_for_duplicates(self, registro: Registro) -> bool:
         pass
+
+    @property
+    def clientes(self) -> list[Cliente]:
+        return self._clientes
+
+    @property
+    def contas(self) -> list[ContaBancaria]:
+        return self._contas
