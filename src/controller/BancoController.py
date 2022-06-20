@@ -16,9 +16,10 @@ class BancoController(Singleton):
 
     def initialize(self):
         options = {
-            # 1: self._banco_controller.initialize,
-            # 2: self._conta_controller.initialize,
-            # 3: self._terminate,
+            # 1: self._show_clientes,
+            # 2: self._registrar_cliente,
+            # 3: self._remover_cliente,
+            # 4: return
         }
 
         while True:
