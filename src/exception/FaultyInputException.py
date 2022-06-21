@@ -1,3 +1,3 @@
 class FaultyInputException(Exception):
-    """ Faulty input data from the user """
+    """ Input inválido do usuário """
     pass

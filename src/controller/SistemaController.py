@@ -9,9 +9,9 @@ from view.SistemaView import SistemaView
 
 class SistemaController(Singleton):
     def __init__(self):
-        self._banco_controller: BancoController = BancoController()
-        self._cliente_controller: ClienteController = ClienteController()
-        self._conta_controller: ContaController = ContaController()
+        self._banco_controller: BancoController = BancoController(self)
+        self._cliente_controller: ClienteController = ClienteController(self)
+        self._conta_controller: ContaController = ContaController(self)
         self._view: SistemaView = SistemaView()
 
         self.initialize()
