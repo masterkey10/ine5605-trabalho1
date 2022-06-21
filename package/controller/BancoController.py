@@ -1,22 +1,26 @@
-from model.Cliente import Cliente
-from model.Singleton import Singleton
-from config import Config
-from exception.FaultyInputException import FaultyInputException
-from view.ClienteView import ClienteView
+from package.model.Singleton import Singleton
+from package.model.Banco import Banco
+from package.view.BancoView import BancoView
+from package.config import Config
+from package.exception.FaultyInputException import FaultyInputException
 
 
-class ClienteController(Singleton):
+class BancoController(Singleton):
     def __init__(self, controlador_sistema):
-        self._clientes: list[Cliente] = []
-        self._view: ClienteView = ClienteView()
+        self._banco: Banco = Banco()
+        self._view: BancoView = BancoView()
         self._sistema = controlador_sistema
+
+    @property
+    def banco(self) -> Banco:
+        return self._banco
 
     def initialize(self):
         options = {
             1: self._show_clientes,
-            2: self._criar_cliente,
+            2: self._registrar_cliente,
             3: self._remover_cliente,
-            4: self._retornar,
+            4: self._retornar
         }
 
         while True:
@@ -28,9 +32,10 @@ class ClienteController(Singleton):
                 pass
 
     def _show_clientes(self):
-        pass
+        for cliente in self._banco.clientes:
+            pass
 
-    def _criar_cliente(self):
+    def _registrar_cliente(self):
         pass
 
     def _remover_cliente(self):

@@ -1,10 +1,10 @@
-from model.Singleton import Singleton
-from config import Config
-from controller.BancoController import BancoController
-from controller.ClienteController import ClienteController
-from controller.ContaController import ContaController
-from exception.FaultyInputException import FaultyInputException
-from view.SistemaView import SistemaView
+from package.model.Singleton import Singleton
+from package.config import Config
+from package.controller.BancoController import BancoController
+from package.controller.ClienteController import ClienteController
+from package.controller.ContaController import ContaController
+from package.exception.FaultyInputException import FaultyInputException
+from package.view.SistemaView import SistemaView
 
 
 class SistemaController(Singleton):

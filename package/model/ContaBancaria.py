@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 
-from model.Abstract import Abstract
+from package.model.Abstract import Abstract
+
 
 class ContaBancaria(ABC, Abstract):
     _id = 0

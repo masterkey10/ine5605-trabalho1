@@ -1,9 +1,9 @@
-from model.Singleton import Singleton
-from model.ContaBancaria import ContaBancaria
-from model.Cliente import Cliente
-from config import Config
-from exception.FaultyInputException import FaultyInputException
-from view.ContaView import ContaView
+from package.model.Singleton import Singleton
+from package.model.ContaBancaria import ContaBancaria
+from package.model.Cliente import Cliente
+from package.config import Config
+from package.exception.FaultyInputException import FaultyInputException
+from package.view.ContaView import ContaView
 
 
 class ContaController(Singleton):
@@ -15,8 +15,8 @@ class ContaController(Singleton):
     def initialize(self):
         options = {
             1: self._transferir,
-            2: self._retornar,
-            3: self._depositar
+            2: self._depositar,
+            3: self._retornar
         }
 
         while True:

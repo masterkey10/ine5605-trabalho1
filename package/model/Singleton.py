@@ -1,4 +1,5 @@
-from model.Abstract import Abstract
+from package.model.Abstract import Abstract
+
 
 class Singleton(Abstract):
     def __new__(cls, *args, **kwargs):

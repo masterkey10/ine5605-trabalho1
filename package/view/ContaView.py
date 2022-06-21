@@ -1,19 +1,18 @@
-from model.Singleton import Singleton
-from config import Config
-from exception.FaultyInputException import FaultyInputException
+from package.config import Config
+from package.exception.FaultyInputException import FaultyInputException
+from package.model.Singleton import Singleton
 
 
-class BancoView(Singleton):
+class ContaView(Singleton):
     def __init__(self):
         pass
 
     def tela_inicial(self) -> int:
         print('--------- SISTEMA BANCÁRIO ---------')
         print('Escolha uma operação:')
-        print('1 - Consultar Clientes')
-        print('2 - Registrar Cliente')
-        print('3 - Remover Cliente')
-        print('4 - Voltar')
+        print('1 - Depósito em Conta')
+        print('2 - Transferência entre Conta')
+        print('3 - Voltar')
 
         while True:
             print(Config.OPCAO)

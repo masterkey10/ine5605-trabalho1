@@ -1,6 +1,6 @@
-from model.ContaBancaria import ContaBancaria
-from model.Transferencia import Transferencia
-from enums.TipoContaEnum import TipoContaEnum
+from package.model.ContaBancaria import ContaBancaria
+from package.model.Transferencia import Transferencia
+from package.enums.TipoContaEnum import TipoContaEnum
 
 
 class ContaCorrente(ContaBancaria):

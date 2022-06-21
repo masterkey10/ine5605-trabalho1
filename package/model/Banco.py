@@ -1,11 +1,11 @@
 from dataclasses import dataclass
 
+from package.model.Cliente import Cliente
+from package.model.ContaBancaria import ContaBancaria
+from package.model.ContaCorrente import ContaCorrente
+from package.model.ContaPoupanca import ContaPoupanca
+from package.model.Singleton import Singleton
 
-from model.Cliente import Cliente
-from model.ContaBancaria import ContaBancaria
-from model.ContaCorrente import ContaCorrente
-from model.ContaPoupanca import ContaPoupanca
-from model.Singleton import Singleton
 
 @dataclass
 class Registro:

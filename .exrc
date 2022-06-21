@@ -1,1 +1,1 @@
-let g:RunBackend = 'python src/run.py'
+let g:RunBackend = 'python -m package'

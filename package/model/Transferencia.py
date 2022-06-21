@@ -1,4 +1,4 @@
-from model.ContaBancaria import ContaBancaria
+from package.model.ContaBancaria import ContaBancaria
 
 
 class Transferencia:

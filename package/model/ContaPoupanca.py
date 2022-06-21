@@ -1,7 +1,7 @@
-from config import Config
-from model.ContaBancaria import ContaBancaria
-from model.Transferencia import Transferencia
-from enums.TipoContaEnum import TipoContaEnum
+from package.config import Config
+from package.model.ContaBancaria import ContaBancaria
+from package.model.Transferencia import Transferencia
+from package.enums.TipoContaEnum import TipoContaEnum
 
 
 class ContaPoupanca(ContaBancaria):

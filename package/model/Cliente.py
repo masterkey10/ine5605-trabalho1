@@ -1,4 +1,4 @@
-from enums.ProfissaoEnum import ProfissaoEnum
+from package.enums.ProfissaoEnum import ProfissaoEnum
 
 
 class Cliente:
